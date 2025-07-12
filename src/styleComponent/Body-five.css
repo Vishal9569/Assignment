@@ -1,0 +1,88 @@
+.body-five-inner {
+    display: flex;
+    gap: 0;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+
+
+.body-five-inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: none !important;
+    border-radius: 0rem !important;
+    border: none;
+    position: relative;
+}
+
+.body-five-inner-div p {
+    z-index: 1;
+    color: rgb(250, 248, 248);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
+
+.body-five-inner-div h6 {
+    z-index: 1;
+    color: rgb(231, 226, 226);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 16rem;
+    translate: (-50);
+    opacity: 0;
+    transform: opacity 3s ease;
+    pointer-events: none;
+}
+
+.body-five-inner-div:hover h6 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.body-five-inner-div h1 {
+    z-index: 1;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 4rem;
+}
+
+.body-five-btn {
+    top: 40%;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.body-five-btn:hover {
+    color: transparent;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+
+.body-five-btn::after {
+    content: "→";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    font-size: 1.2rem;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.body-five-btn:hover::before,
+.body-five-btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}

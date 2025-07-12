@@ -1,0 +1,18 @@
+.text {
+    display: flex;
+    gap: 4px;
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.letter {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.letter.show {
+    opacity: 1;
+    transform: translateX(0);
+}

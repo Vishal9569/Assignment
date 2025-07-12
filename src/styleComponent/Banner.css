@@ -1,0 +1,155 @@
+.persistant-text {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    margin-top: 4rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    min-height: 50vw;
+    min-width: 60vw;
+    z-index: 10;
+}
+
+
+.banner-text {
+    font-size: 6rem;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.text-para {
+    font-size: x-large;
+    color: aliceblue;
+}
+
+
+
+.banner-wrapper {
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 3s ease, opacity 3s ease;
+}
+
+
+.zoom-in-effect {
+    animation: zoomInEffect 3s ease-in-out forwards;
+    z-index: 1;
+}
+
+@keyframes zoomInEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+
+.fold-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.fold-wrapper.show {
+    opacity: 1;
+}
+
+
+.fold-in-paper.animate {
+    animation:
+        unfoldImage 2s ease-out forwards,
+        zoomFromBottomRight 2s ease-in-out 2s forwards;
+    transform-origin: left center;
+    z-index: 2;
+}
+
+
+.fold-in-paper.exit {
+    animation: foldOutImage 2s ease-in-out forwards;
+    transform-origin: left center;
+}
+
+
+@keyframes unfoldImage {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes foldOutImage {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+@keyframes zoomFromBottomRight {
+    0% {
+        transform: scale(1);
+        transform-origin: bottom right;
+    }
+
+    100% {
+        transform: scale(1.10);
+        transform-origin: bottom right;
+    }
+}
+
+
+.scroll-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in 5s forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

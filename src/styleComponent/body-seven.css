@@ -1,0 +1,112 @@
+.body-seven {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color: white;
+    text-align: center;
+    width: 99vw;
+
+}
+
+.body-seven-text-div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.body-seven-inner-text {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.body-seven-inner-text h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.seven-body-card h2 {
+    color: black;
+}
+
+.body-seven-inner-text p {
+    font-size: 1rem;
+    color: #4a4949;
+    line-height: 1.5;
+}
+
+.body-seven-photo-div {
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.body-seven-photo-div img {
+    max-height: 45rem;
+    width: 100vw;
+}
+
+.body-seven-photo-div {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.seven-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.content-card-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.seven-body-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+.animated-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.animated-line p {
+    display: inline-block;
+    padding-left: 100%;
+    color: rgb(132, 130, 130);
+    font-size: 6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100 !important;
+    animation: scrollText 9s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

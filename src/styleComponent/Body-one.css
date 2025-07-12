@@ -1,0 +1,94 @@
+.page-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Body-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40rem;
+    height: 40rem;
+    padding: 0;
+    margin: 0;
+    z-index: .5;
+}
+
+.Body-one-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: rgb(76, 73, 73);
+}
+
+.Body-one-text2 {
+    color: rgb(124, 120, 115);
+}
+
+.Body-one-text3 {
+    color: rgb(96, 93, 90);
+}
+
+.hover-circle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 8rem;
+    height: 4rem;
+    padding: 1rem;
+    border: solid 1px grey;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+
+.hover-circle-btn .btn-text {
+    transition: opacity 0.3s ease;
+}
+
+
+.hover-circle-btn .btn-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+
+.hover-circle-btn:hover {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #0f1944;
+
+}
+
+
+.hover-circle-btn:hover .btn-text {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.hover-circle-btn:hover .btn-arrow {
+    font-weight: 600;
+    opacity: 1;
+}

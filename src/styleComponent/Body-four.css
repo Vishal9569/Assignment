@@ -1,0 +1,114 @@
+.body-four {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom:6rem;
+    padding-top: 2rem;
+
+}
+
+.body-four p {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.body-four-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-four-inner-div {
+    position: relative;
+    height: 32rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    border-bottom: 2px solid rgb(47, 44, 44);
+    border-left: 2px solid rgb(94, 92, 92);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+    touch-action: manipulation;
+    background-color: #000;
+}
+
+.body-four-inner-div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+
+.body-four-inner-div:active img,
+.body-four-inner-div:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.content-div {
+    border: 2px solid gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 28rem;
+    min-height: 29rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-div p {
+    font-size: large;
+    color: #f7f7f7;
+    font-weight: 300;
+}
+
+.content-div h1 {
+    color: #f7f7f7;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.btn-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-div button {
+    width: 6rem !important;
+    height: 3rem !important;
+
+}
+
+
+.btn-div button:hover {
+    color: #f7f7f7;
+    width: 6rem !important;
+    height: 6rem !important;
+}
+
+.descri {
+    color: #333 !important;
+}

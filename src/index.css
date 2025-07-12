@@ -1,0 +1,46 @@
+.banner-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  object-fit: contain;
+  transition: transform 2s ease;
+}
+
+.banner-one {
+  animation: moveUp 4s ease-in-out forwards;
+  z-index: 1;
+}
+
+.banner-two {
+  animation: slideIn 4s ease-in-out 4s forwards;
+  z-index: 2;
+  transform: translate(100%, 100%);
+}
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(100%, 100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
