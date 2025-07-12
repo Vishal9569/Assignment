@@ -112,3 +112,48 @@
         font-size: 1.5rem;
     }
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .hotel-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-info-menu,
+    .hotel-info-middle,
+    .hotel-info-right {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .hotel-info-menu li {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+
+    .hotel-info-middle h2,
+    .hotel-info-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .hotel-info-middle ul {
+        font-size: 1rem;
+    }
+
+    .hotel-info-right p,
+    .hotel-info-right .contact-link {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .social-icons svg {
+        font-size: 1.3rem;
+    }
+}

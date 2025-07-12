@@ -65,3 +65,37 @@
     width: 12rem !important;
     height: 4rem;
 }
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .body-three {
+        margin-top: 3rem;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .body-three-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .inner-div {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .inner-div p {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+
+    .body-three-btn {
+        width: 10rem !important;
+        height: 3.5rem !important;
+        font-size: 1rem;
+    }
+}

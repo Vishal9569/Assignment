@@ -86,3 +86,34 @@
 .body-five-btn:hover::after {
     transform: translate(-50%, -50%) scale(1);
 }
+
+
+/* responsive ness for mobile */
+
+@media screen and (max-width: 768px) {
+    .body-five-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .body-five-inner-div {
+        width: 90vw;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .body-five-inner-div p,
+    .body-five-inner-div h1,
+    .body-five-inner-div h6 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .body-five-btn {
+        width: 80%;
+        font-size: 1rem;
+    }
+}

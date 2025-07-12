@@ -92,3 +92,41 @@
     font-weight: 600;
     opacity: 1;
 }
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .Body-one {
+        max-width: 90vw;
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .Body-one-text {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
+
+    .Body-one-text2,
+    .Body-one-text3 {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .hover-circle-btn {
+        width: 100%;
+        max-width: 12rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .hover-circle-btn:hover {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .hover-circle-btn .btn-arrow {
+        font-size: 1rem;
+    }
+}
